@@ -1,0 +1,4 @@
+name: pulumi-docker-demo-py
+description: A minimal Pulumi Python program that deploys an nginx + redis Docker setup
+runtime:
+  name: python
