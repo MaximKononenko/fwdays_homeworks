@@ -1,0 +1,18 @@
+values:
+  message: "Hello from YAML Values"
+  image:
+    repository: "nginx"
+    tag: "latest"
+    digest: ""
+  replicas: 2
+  service:
+    port: 80
+  env:
+    - name: "ENV"
+      value: "production"
+    - name: "LOG_LEVEL"
+      value: "info"
+  resources:
+    requests:
+      cpu: "100m"
+      memory: "128Mi"

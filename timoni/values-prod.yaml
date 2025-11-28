@@ -1,0 +1,22 @@
+# Production environment values (YAML format)
+values:
+  message: "Hello from Production (YAML)"
+  image:
+    repository: "nginx"
+    tag: "latest"
+    digest: ""
+  replicas: 3
+  service:
+    port: 80
+  env:
+    - name: "ENV"
+      value: "production"
+    - name: "LOG_LEVEL"
+      value: "info"
+  resources:
+    requests:
+      cpu: "100m"
+      memory: "128Mi"
+    limits:
+      cpu: "500m"
+      memory: "256Mi"
